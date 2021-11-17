@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Foraneo101">
         <activity
+            android:name=".Menu_activity"
+            android:exported="true" />
+        <activity
             android:name=".PerfilActivity"
             android:exported="true" />
         <activity

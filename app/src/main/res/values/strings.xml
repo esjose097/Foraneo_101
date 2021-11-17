@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Foraneo101</string>
+    <string name="mensajeMenu">¿Qué necesitas?</string>
+    <string name="ubicacionMenu">Ubicaciones</string>
 </resources>
