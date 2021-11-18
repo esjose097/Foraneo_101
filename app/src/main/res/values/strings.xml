@@ -1,5 +1,14 @@
 <resources>
     <string name="app_name">Foraneo101</string>
+    <!--TextViews-->
+    <!--Pantalla menú-->
     <string name="mensajeMenu">¿Qué necesitas?</string>
     <string name="ubicacionMenu">Ubicaciones</string>
+    <string name="transporteMenu">Transportes</string>
+    <string name="bitacoraMenu">Bitacora</string>
+    <string name="recetasMenu">Recetas</string>
+    <!--Botones-->
+    <String name="CerrarSesion">Cerrar sesión</String>
+
+
 </resources>
