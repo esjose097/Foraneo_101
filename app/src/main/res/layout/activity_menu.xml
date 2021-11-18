@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/rojo2"
     android:orientation="vertical"
     tools:context=".Menu_activity">
 
@@ -42,7 +42,7 @@
             android:textColor="@color/white"
             android:textAlignment="center"
             android:textSize="20sp"
-            android:text="@string/mensajeMenu"/>
+            android:text="@string/mensajeMenu"/> <!--Esta imagen es temporal-->
 
         <GridLayout
             android:layout_width="370dp"
@@ -60,8 +60,7 @@
                 android:layout_marginTop="60dp"
                 android:background="@drawable/ic_baseline_location_on_24"
                 android:clickable="true"
-                android:focusable="true"/>
-            <!--Se pondrá el icono ese raro mientras alguien mete las imagenes-->
+                android:focusable="true"/> <!--Esta imagen es temporal-->
             <TextView
                 android:layout_width="140dp"
                 android:layout_height="wrap_content"
@@ -73,9 +72,9 @@
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="20sp"
-                android:text="@string/ubicacionMenu"/>
+                android:text="@string/ubicacionMenu"/> <!--Esta imagen es temporal-->
 
-            <TextView
+            <ImageView
                 android:id="@+id/imgTransporte"
                 android:layout_width="120dp"
                 android:layout_height="100dp"
@@ -83,9 +82,10 @@
                 android:layout_column="1"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="80dp"
+                android:background="@drawable/ic_baseline_arrow_back_24"
                 android:clickable="true"
                 android:focusable="true"/>
-                <!--android:background="Aquí va el logo de esta cosa"-->
+                <!--android:background="Aquí va el logo de esta cosa"--> <!--Esta imagen es temporal-->
 
             <TextView
                 android:layout_width="140dp"
@@ -98,7 +98,7 @@
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="20sp"
-                android:text=""/>
+                android:text="@string/transporteMenu"/>
         </GridLayout>
 
         <GridLayout
@@ -115,6 +115,7 @@
                 android:layout_column="0"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="40dp"
+                android:background="@drawable/ic_baseline_arrow_back_24"
                 android:clickable="true"
                 android:focusable="true"/>
             <!--android:background="Aquí va el icono una vez lo tengamos"-->
@@ -139,6 +140,7 @@
                 android:layout_column="1"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="40dp"
+                android:background="@drawable/ic_baseline_location_on_24"
                 android:clickable="true"
                 android:focusable="true"/>
             <!--android:background="Aquí va el icono cuando tengamos uno"-->
@@ -150,8 +152,8 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
                 android:fontFamily="sans-serif-light"
-                android:textColor="@color/white"
                 android:textAlignment="center"
+                android:textColor="@color/white"
                 android:textSize="20sp"
                 android:text="@string/recetasMenu"/>
         </GridLayout>
@@ -159,12 +161,12 @@
         <Button
             android:id="@+id/btnCerrarSesion"
             android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:layout_marginTop="20dp"
+            android:layout_height="48dp"
             android:layout_gravity="center"
-            android:textColor="@color/black"
-            android:textSize="12sp"
-            android:text="@string/CerrarSesion"/>
+            android:layout_marginTop="20dp"
+            android:text="@string/CerrarSesion"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
     </LinearLayout>
 
 

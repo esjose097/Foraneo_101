@@ -14,6 +14,9 @@
     <string name="didis">Didi</string>
     <string name="indrivers">In driver</string>
     <string name="taxis">Taxi</string>
+    <!--Pantalla recetas-->
+    <string name="subtituloRecetas">¿Tienes hambre?</string>
+    <string name="textoRecetas">Aquí puedes ver varias de nuestras recetas</string>
 
     <!--Botones-->
     <string name="CerrarSesion">Cerrar sesión</string>
