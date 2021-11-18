@@ -23,7 +23,7 @@
             android:layout_marginRight="20dp"
             android:clickable="true"
             android:focusable="true"
-            android:src="@tools:sample/avatars"/>
+            android:src="@tools:sample/avatars"/> <!--Esta imagen es temporal-->
 
     </LinearLayout>
     <LinearLayout
@@ -164,7 +164,7 @@
             android:layout_gravity="center"
             android:textColor="@color/black"
             android:textSize="12sp"
-            android:text="Cerrar sesión"/>
+            android:text="@string/CerrarSesion"/>
     </LinearLayout>
 
 

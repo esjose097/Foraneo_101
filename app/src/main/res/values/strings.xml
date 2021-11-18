@@ -7,8 +7,16 @@
     <string name="transporteMenu">Transportes</string>
     <string name="bitacoraMenu">Bitacora</string>
     <string name="recetasMenu">Recetas</string>
+    <!--Pantalla de transportes-->
+    <string name="subtituloTransporte">Medios de\n transporte</string>
+    <string name="buses">Lineas de camiones</string>
+    <string name="ubers">Uber</string>
+    <string name="didis">Didi</string>
+    <string name="indrivers">In driver</string>
+    <string name="taxis">Taxi</string>
+
     <!--Botones-->
-    <String name="CerrarSesion">Cerrar sesión</String>
+    <string name="CerrarSesion">Cerrar sesión</string>
 
 
 </resources>
