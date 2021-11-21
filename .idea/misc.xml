@@ -3,14 +3,6 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/HP/Desktop/Foraneo_101/app/src/main/res/layout/activity_login.xml" value="0.129981884057971" />
-        <entry key="..\:/Users/HP/Desktop/Foraneo_101/app/src/main/res/layout/activity_main.xml" value="0.11684782608695653" />
-        <entry key="..\:/Users/HP/Desktop/Foraneo_101/app/src/main/res/layout/activity_menu.xml" value="0.25" />
-        <entry key="..\:/Users/HP/Desktop/Foraneo_101/app/src/main/res/layout/activity_perfil.xml" value="0.11684782608695653" />
-        <entry key="..\:/Users/HP/Desktop/Foraneo_101/app/src/main/res/layout/activity_recetas.xml" value="0.10126582278481013" />
-        <entry key="..\:/Users/HP/Desktop/Foraneo_101/app/src/main/res/layout/activity_registro.xml" value="0.11684782608695653" />
-        <entry key="..\:/Users/HP/Desktop/Foraneo_101/app/src/main/res/layout/activity_splash_screen.xml" value="0.129981884057971" />
-        <entry key="..\:/Users/HP/Desktop/Foraneo_101/app/src/main/res/layout/activity_transportes.xml" value="0.2" />
         <entry key="..\:/Users/francisco/AndroidStudioProjects/Foraneo101/app/src/main/res/drawable/backrepeat.xml" value="0.25" />
         <entry key="..\:/Users/francisco/AndroidStudioProjects/Foraneo101/app/src/main/res/drawable/ic_arrow_back.xml" value="0.38666666666666666" />
         <entry key="..\:/Users/francisco/AndroidStudioProjects/Foraneo101/app/src/main/res/drawable/ic_circulo.xml" value="0.14074074074074075" />
@@ -22,9 +14,12 @@
         <entry key="..\:/Users/francisco/AndroidStudioProjects/Foraneo101/app/src/main/res/layout/activity_splash_screen.xml" value="0.33" />
         <entry key="..\:/Users/francisco/Documents/GitHub/Foraneo_101/app/src/main/res/layout/activity_login.xml" value="0.2033514492753623" />
         <entry key="..\:/Users/francisco/Documents/GitHub/Foraneo_101/app/src/main/res/layout/activity_main.xml" value="0.2033514492753623" />
+        <entry key="..\:/Users/francisco/Documents/GitHub/Foraneo_101/app/src/main/res/layout/activity_menu.xml" value="0.1831306990881459" />
         <entry key="..\:/Users/francisco/Documents/GitHub/Foraneo_101/app/src/main/res/layout/activity_perfil.xml" value="0.2033514492753623" />
+        <entry key="..\:/Users/francisco/Documents/GitHub/Foraneo_101/app/src/main/res/layout/activity_recetas.xml" value="0.1831306990881459" />
         <entry key="..\:/Users/francisco/Documents/GitHub/Foraneo_101/app/src/main/res/layout/activity_registro.xml" value="0.2033514492753623" />
         <entry key="..\:/Users/francisco/Documents/GitHub/Foraneo_101/app/src/main/res/layout/activity_splash_screen.xml" value="0.2033514492753623" />
+        <entry key="..\:/Users/francisco/Documents/GitHub/Foraneo_101/app/src/main/res/layout/activity_transportes.xml" value="0.1831306990881459" />
       </map>
     </option>
   </component>
