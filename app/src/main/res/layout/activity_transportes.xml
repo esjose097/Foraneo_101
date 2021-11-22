@@ -38,7 +38,7 @@
                 android:layout_marginRight="20dp"
                 android:clickable="true"
                 android:focusable="true"
-                android:src="@tools:sample/avatars"/> <!--Esta imagen es temporal-->
+                tools:srcCompat="@tools:sample/avatars"/> <!--Esta imagen es temporal-->
         </GridLayout>
     </LinearLayout>
 

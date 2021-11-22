@@ -38,10 +38,10 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/black"
             android:layout_marginTop="20dp"
             android:text="Inicia Sesión"
             android:textAlignment="center"
+            android:textColor="@color/black"
             android:textSize="32dp" />
 
         <EditText
@@ -72,23 +72,21 @@
             android:id="@+id/btn_iniciar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Iniciar Sesión"
-            android:textAllCaps="false"
             android:layout_gravity="center"
+            android:layout_marginTop="120dp"
             android:backgroundTint="@color/morado"
-            android:layout_marginTop="150dp"
-            />
+            android:text="Iniciar Sesión"
+            android:textAllCaps="false" />
 
         <Button
             android:id="@+id/btn_registrar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Registrame"
-            android:textAllCaps="false"
             android:layout_gravity="center"
-            android:backgroundTint="@color/rojo2"
             android:layout_marginTop="15dp"
-            />
+            android:backgroundTint="@color/rojo2"
+            android:text="Registrame"
+            android:textAllCaps="false" />
     </LinearLayout>
 
 

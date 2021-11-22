@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="preciado.casal.valenzuela.foraneo101">
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS_SETTINGS_EXTERNAL_STORAGE"></uses-permission>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,35 +13,54 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Foraneo101">
+
+        <activity
+            android:name=".ListaNotasActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".NotaActivity"
+            android:exported="true" />
+
         <activity
             android:name=".Recetas_activity"
             android:exported="true" />
+
         <activity
             android:name=".Transportes"
             android:exported="true" />
+
         <activity
             android:name=".Menu_activity"
             android:exported="true" />
+
         <activity
             android:name=".PerfilActivity"
             android:exported="true" />
+
         <activity
             android:name=".LoginActivity"
             android:exported="true" />
+
         <activity
             android:name=".RegistroActivity"
             android:exported="true" />
+
         <activity
             android:name=".SplashScreen"
-            android:exported="true" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
         </activity>
     </application>
 
