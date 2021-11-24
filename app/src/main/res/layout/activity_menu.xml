@@ -22,6 +22,7 @@
             android:layout_marginRight="20dp"
             android:clickable="true"
             android:focusable="true"
+            android:contentDescription="Avatar del usuario"
             tools:srcCompat="@tools:sample/avatars"/> <!--Esta imagen es temporal-->
 
     </LinearLayout>
@@ -38,11 +39,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:fontFamily="sans-serif-light"
+            android:fontFamily="sans-serif-black"
+            android:textStyle="bold"
             android:textColor="@color/white"
             android:textAlignment="center"
-            android:textSize="20sp"
-            android:text="@string/mensajeMenu"/> <!--Esta imagen es temporal-->
+            android:textSize="30sp"
+            android:text="@string/mensajeMenu"/>
 
         <GridLayout
             android:layout_width="370dp"
@@ -58,7 +60,8 @@
                 android:layout_column="0"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="60dp"
-                android:background="@drawable/ic_baseline_location_on_24"
+                android:contentDescription="Opcion de ubicación"
+                android:background="@drawable/ubicacion"
                 android:clickable="true"
                 android:focusable="true"/> <!--Esta imagen es temporal-->
 
@@ -70,6 +73,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
                 android:fontFamily="sans-serif-light"
+                android:textStyle="bold"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="20sp"
@@ -83,10 +87,10 @@
                 android:layout_column="1"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="80dp"
-                android:background="@drawable/ic_baseline_arrow_back_24"
+                android:contentDescription="Opcion de medios de transporte"
+                android:background="@drawable/icon_car"
                 android:clickable="true"
                 android:focusable="true"/>
-                <!--android:background="Aquí va el logo de esta cosa"--> <!--Esta imagen es temporal-->
 
             <TextView
                 android:layout_width="140dp"
@@ -96,6 +100,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
                 android:fontFamily="sans-serif-light"
+                android:textStyle="bold"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="20sp"
@@ -116,10 +121,10 @@
                 android:layout_column="0"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="40dp"
-                android:background="@drawable/ic_baseline_arrow_back_24"
+                android:contentDescription="opcion de notas"
+                android:background="@drawable/icon_chat"
                 android:clickable="true"
                 android:focusable="true"/>
-            <!--android:background="Aquí va el icono una vez lo tengamos"-->
 
             <TextView
                 android:layout_width="140dp"
@@ -129,6 +134,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
                 android:fontFamily="sans-serif-light"
+                android:textStyle="bold"
                 android:textColor="@color/white"
                 android:textSize="20sp"
                 android:text="@string/bitacoraMenu"/>
@@ -141,10 +147,11 @@
                 android:layout_column="1"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="40dp"
-                android:background="@drawable/ic_baseline_location_on_24"
+                android:contentDescription="Opcion de recetas"
+                android:background="@drawable/icon_restaurant"
                 android:clickable="true"
                 android:focusable="true"/>
-            <!--android:background="Aquí va el icono cuando tengamos uno"-->
+
             <TextView
                 android:layout_width="140dp"
                 android:layout_height="wrap_content"
@@ -153,6 +160,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
                 android:fontFamily="sans-serif-light"
+                android:textStyle="bold"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="20sp"
