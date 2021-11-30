@@ -8,7 +8,7 @@ class ListaNotasActivity : AppCompatActivity() {
 
     private var notas = ArrayList<Nota>()
     private lateinit var adaptador: AdaptadoNotas
-    private val lista: ListView = findViewById(R.id.listView)
+    private var lista: ListView = findViewById(R.id.listadenotas)
 
 
     override fun onCreate(savedInstanceState: Bundle?) {

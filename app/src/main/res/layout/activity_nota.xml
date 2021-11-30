@@ -38,6 +38,7 @@
         android:background="@color/amarillo"
         android:textColor="@color/primary_text"
         android:layout_height="wrap_content"
-        android:text="Guardar"   />
+        android:text="Guardar"
+        />
 
 </LinearLayout>
