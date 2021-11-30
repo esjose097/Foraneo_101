@@ -45,7 +45,7 @@
             android:textSize="32dp" />
 
         <EditText
-            android:id="@+id/tv_email"
+            android:id="@+id/emailEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="45dp"
@@ -53,11 +53,11 @@
             android:layout_marginRight="45dp"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Usuario / Correo"
+            android:hint="Usuario / Correo"
             android:textSize="24dp" />
 
         <EditText
-            android:id="@+id/tv_password"
+            android:id="@+id/passordEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="45dp"
@@ -65,7 +65,7 @@
             android:layout_marginRight="45dp"
             android:ems="10"
             android:inputType="textPassword"
-            android:text="Contraseña"
+            android:hint="Contraseña"
             android:textSize="24dp" />
 
         <Button
@@ -73,7 +73,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="120dp"
+            android:layout_marginTop="70dp"
             android:backgroundTint="@color/morado"
             android:text="Iniciar Sesión"
             android:textAllCaps="false" />

@@ -61,8 +61,8 @@
             android:layout_marginRight="45dp"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Usuario / Correo"
-            android:textSize="24dp" />
+            android:hint="Usuario / Correo"
+            android:textSize="20dp" />
 
         <EditText
             android:id="@+id/tv_password"
@@ -73,15 +73,27 @@
             android:layout_marginRight="45dp"
             android:ems="10"
             android:inputType="textPassword"
-            android:text="Contraseña"
-            android:textSize="24dp" />
+            android:hint="Contraseña"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/tv_password2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="45dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Confirma la contraseña"
+            android:textSize="20dp" />
 
         <Button
-            android:id="@+id/btn_iniciar"
+            android:id="@+id/btn_guardarUsuario"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="150dp"
+            android:layout_marginTop="30dp"
             android:backgroundTint="@color/morado"
             android:text="Iniciar Sesión"
             android:textAllCaps="false" />
