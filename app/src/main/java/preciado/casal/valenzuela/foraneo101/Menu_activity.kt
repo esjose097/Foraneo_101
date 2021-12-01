@@ -34,9 +34,10 @@ class Menu_activity : AppCompatActivity() {
             val intent = Intent(this, Transportes::class.java)
             this.startActivity(intent)
         }
-
+        //Teoricamente deberia jalar pero como no lo puedo probar me dirá Preciado mañana.
         binding.imgUbicacion.setOnClickListener {
-            //PENDIENTE
+            val intent = Intent(this, Lugares::class.java)
+            this.startActivity(intent)
         }
 
         binding.btnCerrarSesion.setOnClickListener {
