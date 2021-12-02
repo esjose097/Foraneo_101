@@ -6,7 +6,6 @@
         <entry key="..\:/Users/HP/Desktop/Foraneo_101/app/src/main/res/drawable/backrepeat.xml" value="0.18981481481481483" />
         <entry key="..\:/Users/HP/Desktop/Foraneo_101/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/Users/HP/Desktop/Foraneo_101/app/src/main/res/layout/activity_lugares.xml" value="0.1" />
-        <entry key="..\:/Users/HP/Desktop/Foraneo_101/app/src/main/res/layout/activity_maps.xml" value="0.11005434782608696" />
         <entry key="..\:/Users/HP/Desktop/Foraneo_101/app/src/main/res/layout/activity_menu.xml" value="0.1" />
         <entry key="..\:/Users/HP/Desktop/Foraneo_101/app/src/main/res/layout/activity_nota.xml" value="0.11005434782608696" />
         <entry key="..\:/Users/HP/Desktop/Foraneo_101/app/src/main/res/layout/activity_perfil.xml" value="0.11005434782608696" />
@@ -28,6 +27,7 @@
         <entry key="..\:/Users/francisco/Documents/GitHub/Foraneo_101/app/src/main/res/layout/activity_lista_notas.xml" value="0.15" />
         <entry key="..\:/Users/francisco/Documents/GitHub/Foraneo_101/app/src/main/res/layout/activity_login.xml" value="0.2033514492753623" />
         <entry key="..\:/Users/francisco/Documents/GitHub/Foraneo_101/app/src/main/res/layout/activity_main.xml" value="0.2033514492753623" />
+        <entry key="..\:/Users/francisco/Documents/GitHub/Foraneo_101/app/src/main/res/layout/activity_maps.xml" value="0.16927083333333334" />
         <entry key="..\:/Users/francisco/Documents/GitHub/Foraneo_101/app/src/main/res/layout/activity_menu.xml" value="0.22" />
         <entry key="..\:/Users/francisco/Documents/GitHub/Foraneo_101/app/src/main/res/layout/activity_nota.xml" value="0.14782608695652175" />
         <entry key="..\:/Users/francisco/Documents/GitHub/Foraneo_101/app/src/main/res/layout/activity_perfil.xml" value="0.2033514492753623" />
@@ -35,6 +35,7 @@
         <entry key="..\:/Users/francisco/Documents/GitHub/Foraneo_101/app/src/main/res/layout/activity_registro.xml" value="0.25" />
         <entry key="..\:/Users/francisco/Documents/GitHub/Foraneo_101/app/src/main/res/layout/activity_splash_screen.xml" value="0.2033514492753623" />
         <entry key="..\:/Users/francisco/Documents/GitHub/Foraneo_101/app/src/main/res/layout/activity_transportes.xml" value="0.25" />
+        <entry key="..\:/Users/francisco/Documents/GitHub/Foraneo_101/app/src/main/res/layout/activity_ubicaciones.xml" value="0.16927083333333334" />
         <entry key="..\:/Users/francisco/Documents/GitHub/Foraneo_101/app/src/main/res/layout/content_nota.xml" value="0.31521739130434784" />
         <entry key="..\:/Users/francisco/Documents/GitHub/Foraneo_101/app/src/main/res/layout/nota_layout.xml" value="0.31521739130434784" />
       </map>

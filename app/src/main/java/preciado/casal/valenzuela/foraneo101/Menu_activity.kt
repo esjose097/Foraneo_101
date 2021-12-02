@@ -36,7 +36,7 @@ class Menu_activity : AppCompatActivity() {
         }
         //Teoricamente deberia jalar pero como no lo puedo probar me dirá Preciado mañana.
         binding.imgUbicacion.setOnClickListener {
-            val intent = Intent(this, MapsActivity::class.java)
+            val intent = Intent(this, LugaresActivity::class.java)
             this.startActivity(intent)
         }
 
