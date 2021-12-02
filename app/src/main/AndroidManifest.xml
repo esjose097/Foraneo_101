@@ -33,6 +33,10 @@
             android:value="@string/google_maps_key" />
 
         <activity
+            android:name=".MapsActivity"
+            android:exported="true"
+            android:label="@string/title_activity_maps" />
+        <activity
             android:name=".Lugares"
             android:exported="true"
             android:label="@string/title_activity_lugares" />
@@ -72,7 +76,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>

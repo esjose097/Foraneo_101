@@ -2,7 +2,6 @@ package preciado.casal.valenzuela.foraneo101
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import preciado.casal.valenzuela.foraneo101.Lugar
 
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
@@ -10,18 +9,17 @@ import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
-import preciado.casal.valenzuela.foraneo101.databinding.ActivityLugaresBinding
+import preciado.casal.valenzuela.foraneo101.databinding.ActivityMapsBinding
 
-class Lugares : AppCompatActivity(), OnMapReadyCallback {
-    /*De momento lo voy a comentariar porque no puedo correrlo, iré a la segura.*/
-    //private lateinit var listaLugares: ArrayList<Lugar>
+class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
+
     private lateinit var mMap: GoogleMap
-    private lateinit var binding: ActivityLugaresBinding
+    private lateinit var binding: ActivityMapsBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityLugaresBinding.inflate(layoutInflater)
+        binding = ActivityMapsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
@@ -41,7 +39,6 @@ class Lugares : AppCompatActivity(), OnMapReadyCallback {
      */
     override fun onMapReady(googleMap: GoogleMap) {
         mMap = googleMap
-
         //Hospitales
         val hImms = LatLng(27.4944218,-109.9628197)
         val hGeneral = LatLng(27.4828052,-109.955163)
@@ -52,25 +49,25 @@ class Lugares : AppCompatActivity(), OnMapReadyCallback {
         val hIsteSon2 = LatLng(27.4935887,-109.957588)
 
         //Bancos
-            //Banorte
+        //Banorte
         val bBtTutuli = LatLng(27.4936738,-109.9489918)
         val bBtBella = LatLng(27.4829297,-109.9580834)
         val bBtCentro = LatLng(27.4961716,-109.9303402)
         val bBtAle = LatLng(27.5039551,-109.9307093)
-            //Banamex
+        //Banamex
         val bBnTutuli = LatLng(27.4936061,-109.945798)
         val bBnBella = LatLng(27.4825594,-109.96029)
         val bBnAle = LatLng(27.5059663,-109.9308328)
         val bBnCentro = LatLng(27.4935765,-109.9330347)
-            //BBVA
+        //BBVA
         val bBVBella = LatLng(27.4829567,-109.9570432)
         val bBVCali = LatLng(27.4859272,-109.9451701)
         val bBVAle = LatLng(27.5047526,-109.9303081)
         val bBVCentro = LatLng(27.4915995,-109.9314328)
-            //HSBC
+        //HSBC
         val bHsAle = LatLng(27.5016291,-109.9302398)
         val bHsCentro = LatLng(27.4937177,-109.9339)
-            //Santander
+        //Santander
         val bSaAle = LatLng(27.5016598,-109.9308972)
         val bSaCentro = LatLng(27.4940941,-109.9342252)
 
@@ -106,59 +103,52 @@ class Lugares : AppCompatActivity(), OnMapReadyCallback {
         mMap.addMarker(MarkerOptions().position(hIsteSon1).title("Hospital: ISSSTESON"))
         mMap.addMarker(MarkerOptions().position(hIsteSon2).title("Hospital: ISSSTESON Policlinica"))
         //Agregamos los Bancos
-            //Banamex
+        //Banamex
         mMap.addMarker(MarkerOptions().position(bBnTutuli).title("Banco: Banamex"))
         mMap.addMarker(MarkerOptions().position(bBnAle).title("Banco: Banamex"))
         mMap.addMarker(MarkerOptions().position(bBnBella).title("Banco: Banamex"))
         mMap.addMarker(MarkerOptions().position(bBnCentro).title("Banco: Banamex"))
-            //Banorte
+        //Banorte
         mMap.addMarker(MarkerOptions().position(bBtAle).title("Banco: Banorte"))
         mMap.addMarker(MarkerOptions().position(bBtBella).title("Banco: Banorte"))
         mMap.addMarker(MarkerOptions().position(bBtCentro).title("Banco: Banorte"))
         mMap.addMarker(MarkerOptions().position(bBtTutuli).title("Banco: Banorte"))
-            //BBVA
+        //BBVA
         mMap.addMarker(MarkerOptions().position(bBVAle).title("Banco: BBVA"))
         mMap.addMarker(MarkerOptions().position(bBVBella).title("Banco: BBVA"))
         mMap.addMarker(MarkerOptions().position(bBVCali).title("Banco: BBVA"))
         mMap.addMarker(MarkerOptions().position(bBVCentro).title("Banco: BBVA"))
-            //HSBC
+        //HSBC
         mMap.addMarker(MarkerOptions().position(bHsAle).title("Banco: HSBC"))
         mMap.addMarker(MarkerOptions().position(bHsCentro).title("Banco: HSBC"))
-            //Santander
+        //Santander
         mMap.addMarker(MarkerOptions().position(bSaAle).title("Banco: Santander"))
         mMap.addMarker(MarkerOptions().position(bSaCentro).title("Banco: Santander"))
         //Se agregan los super mercados
-            //Ley's
+        //Ley's
         mMap.addMarker(MarkerOptions().position(leyAlem).title("Super mercado: Ley"))
         mMap.addMarker(MarkerOptions().position(leySen).title("Super mercado: Ley"))
         mMap.addMarker(MarkerOptions().position(leyJal).title("Super mercado: Ley"))
-            //Soriana
+        //Soriana
         mMap.addMarker(MarkerOptions().position(sorBella).title("Super mercado: Soriana"))
         mMap.addMarker(MarkerOptions().position(sorTutu).title("Super mercado: Soriana"))
-            //Bodega aurrera
+        //Bodega aurrera
         mMap.addMarker(MarkerOptions().position(bau200).title("Super mercado: Bodega aurrera"))
         mMap.addMarker(MarkerOptions().position(bauEstadio).title("Super mercado: Bodega aurrera"))
         mMap.addMarker(MarkerOptions().position(bauPuente).title("Super mercado: Bodega aurrera"))
         //Se agrega la central de camiones
         mMap.addMarker(MarkerOptions().position(estacion).title("Central de autobuses"))
         //Se agregan los cines
-            //Cinepolis
+        //Cinepolis
         mMap.addMarker(MarkerOptions().position(cineBella).title("Cine: Cinepolis"))
         mMap.addMarker(MarkerOptions().position(cineSendero).title("Cine: Cinepolis"))
-            //Cinemex
+        //Cinemex
         mMap.addMarker(MarkerOptions().position(cineMex).title("Cine: Cinemex"))
         //Otros lugares de interes
         mMap.addMarker(MarkerOptions().position(estadio).title("Estadio yaquis"))
         mMap.addMarker(MarkerOptions().position(laguna).title("Laguna del nainari"))
 
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(estacion,16.0f))
-    }
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(estacion,10.0f))
 
-    /* De momento lo voy a comentariar porque no puedo correrlo, iré a la segura.
-    El plan es optimizar esto mediante una lista que almacene objetos de la clase "Lugar"
-    y mediante un for o una estructura de repetición agregarlos al mapa.
-    Pero será despues de que el Preciado lo pruebe.
-    private fun cargarLista(){
     }
-    */
 }

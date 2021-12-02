@@ -24,6 +24,7 @@
     <!--Botones-->
     <string name="CerrarSesion">Cerrar sesión</string>
     <string name="title_activity_lugares">Lugares</string>
+    <string name="title_activity_maps">MapsActivity</string>
 
 
 </resources>
