@@ -5,20 +5,21 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ListView
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import java.io.*
 
 class ListaNotasActivity : AppCompatActivity() {
 
     private var notas = ArrayList<Nota>()
     private lateinit var adaptador: AdaptadoNotas
-    private var lista: ListView = findViewById(R.id.listadenotas)
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_lista_notas)
 
-        val fab: Button = findViewById(R.id.fab)
+        var lista: ListView = findViewById(R.id.listadenotas) as ListView
+
+        val fab: FloatingActionButton = findViewById(R.id.fab) as FloatingActionButton
 
         fab.setOnClickListener {
             var intent =Intent(this, NotaActivity::class.java)

@@ -22,16 +22,22 @@ import java.io.File
 import java.io.FileOutputStream
 
 class NotaActivity : AppCompatActivity() {
-    val eTitulo: EditText = findViewById(R.id.et_titutlo)
-    val eContenido: EditText = findViewById(R.id.et_contenido)
+
+    private lateinit var eTitulo: EditText
+    private lateinit var eContenido: EditText
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_nota)
+        /*Prueba*/
+        this.eTitulo = findViewById(R.id.et_titutlo) as EditText
+        this.eContenido = findViewById(R.id.et_contenido) as EditText
 
-        val btnG: Button =findViewById(R.id.btn_guardar)
+        val btnG: Button = findViewById(R.id.btn_guardar)
 
         btnG.setOnClickListener {
+            Toast.makeText(baseContext, "Se el botón si recibe el 'click'",
+                Toast.LENGTH_SHORT).show()
             guardar_Nota()
         }
 
@@ -58,8 +64,11 @@ class NotaActivity : AppCompatActivity() {
         {
             ActivityCompat.requestPermissions(this, arrayOf(android.Manifest.permission.WRITE_EXTERNAL_STORAGE),
                 235)
+            Toast.makeText(baseContext, "Tienes acceso y estas en el request",
+                Toast.LENGTH_SHORT).show()
         }
-        else{}
+        else{Toast.makeText(baseContext, "Te mandaron alv bro",
+            Toast.LENGTH_SHORT).show()}
     }
 
     override fun onRequestPermissionsResult(
@@ -72,6 +81,8 @@ class NotaActivity : AppCompatActivity() {
             235 ->{
                 if((grantResults.isNotEmpty()&&grantResults[0]==PackageManager.PERMISSION_GRANTED)){
                     guardar()
+                    Toast.makeText(baseContext, "La nota se ha guardado con exito!",
+                        Toast.LENGTH_SHORT).show()
                 }
                 else{
                     Toast.makeText(this,"Error: permisos denegados", Toast.LENGTH_SHORT).show()
