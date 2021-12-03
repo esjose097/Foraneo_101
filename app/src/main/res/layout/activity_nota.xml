@@ -17,11 +17,11 @@
 
     <EditText
         android:id="@+id/et_titutlo"
-        android:textColor="@color/primary_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Título"
-        />
+        android:minHeight="48dp"
+        android:textColor="@color/primary_text" />
 
     <EditText
         android:id="@+id/et_contenido"

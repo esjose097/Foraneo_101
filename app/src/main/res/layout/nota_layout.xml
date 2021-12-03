@@ -37,17 +37,22 @@
 
         <ImageView
             android:id="@+id/btn_borrar"
-            android:layout_width="15pt"
-            android:layout_height="15pt"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:layout_marginRight="10pt"
-            android:src="@drawable/ic_delete_black_128dp"/>
+            android:src="@drawable/ic_delete_black_128dp"
+            android:contentDescription="Boton de para eliminar"
+            android:clickable="true"
+            android:focusable="true"/>
 
         <ImageView
-            android:layout_width="15pt"
-            android:layout_height="15pt"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:id="@+id/btn_editar"
-            android:src="@drawable/ic_edit_black_128dp"/>
-
+            android:src="@drawable/ic_edit_black_128dp"
+            android:contentDescription="Boton de para editar"
+            android:clickable="true"
+            android:focusable="true"/>
     </LinearLayout>
 
 </LinearLayout>
