@@ -3,6 +3,7 @@ package preciado.casal.valenzuela.foraneo101
 import android.Manifest
 import android.app.Activity
 import android.content.Context
+import android.content.Intent
 import android.content.pm.PackageManager
 
 
@@ -36,26 +37,10 @@ class NotaActivity : AppCompatActivity() {
         val btnG: Button = findViewById(R.id.btn_guardar)
 
         btnG.setOnClickListener {
-            Toast.makeText(baseContext, "Se el botón si recibe el 'click'",
-                Toast.LENGTH_SHORT).show()
             guardar_Nota()
+            var intent = Intent(this, ListaNotasActivity::class.java)
+            startActivity(intent)
         }
-
-
-        /*
-        Nose que es esto pero no lo borre por si acaso era una mouse Herramienta miesteriosa que nos
-        ayudará despues.
-        var extras = intent.extras
-        if (extras != null){
-            var titulo = extras.getString("titulo")
-            var contenido = extras.getString("contenido")
-
-            val et_titutlo: TextView = findViewById(R.id.et_titutlo)
-            et_titutlo.setText(titulo)
-
-            val et_contenido: TextView = findViewById(R.id.et_contenido)
-            et_contenido.setText(contenido)
-        }*/
     }
 
     fun guardar_Nota(){
@@ -67,8 +52,12 @@ class NotaActivity : AppCompatActivity() {
             Toast.makeText(baseContext, "Tienes acceso y estas en el request",
                 Toast.LENGTH_SHORT).show()
         }
-        else{Toast.makeText(baseContext, "Te mandaron alv bro",
-            Toast.LENGTH_SHORT).show()}
+        else{
+            ActivityCompat.requestPermissions(this,arrayOf(android.Manifest.permission.WRITE_EXTERNAL_STORAGE),235)
+            Toast.makeText(baseContext, "Necesita conceder los permisos necesarios, porfavor" +
+                "activelos y reinicie la aplicación",
+            Toast.LENGTH_SHORT).show()
+        }
     }
 
     override fun onRequestPermissionsResult(
@@ -81,8 +70,6 @@ class NotaActivity : AppCompatActivity() {
             235 ->{
                 if((grantResults.isNotEmpty()&&grantResults[0]==PackageManager.PERMISSION_GRANTED)){
                     guardar()
-                    Toast.makeText(baseContext, "La nota se ha guardado con exito!",
-                        Toast.LENGTH_SHORT).show()
                 }
                 else{
                     Toast.makeText(this,"Error: permisos denegados", Toast.LENGTH_SHORT).show()

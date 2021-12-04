@@ -1,6 +1,7 @@
 package preciado.casal.valenzuela.foraneo101
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -40,6 +41,7 @@ class AdaptadoNotas: BaseAdapter {
         var titulo = vista.findViewById(R.id.tv_titulo_det) as TextView
         var contenido = vista.findViewById(R.id.tv_contenido_det) as TextView
         val btnBorrar = vista.findViewById(R.id.btn_borrar) as ImageView
+        val btnEditar = vista.findViewById(R.id.btn_editar) as ImageView
 
         titulo.setText(nota.titulo)
         contenido.setText(nota.contenido)
@@ -50,6 +52,9 @@ class AdaptadoNotas: BaseAdapter {
             this.notifyDataSetChanged()
         }
 
+        btnEditar.setOnClickListener {
+            /*Aquí editariamos la nota, SI SUPIERAMOS COMO!!!!*/
+        }
         return vista
     }
 
