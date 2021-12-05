@@ -73,7 +73,7 @@ class NotaActivity : AppCompatActivity() {
             }
         }
         finish()
-               
+
         /*if(ContextCompat.checkSelfPermission(this,android.Manifest.permission.WRITE_EXTERNAL_STORAGE)
             != PackageManager.PERMISSION_DENIED)
         {

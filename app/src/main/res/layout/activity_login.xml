@@ -68,22 +68,39 @@
             android:hint="Contraseña"
             android:textSize="24dp" />
 
-        <Button
-            android:id="@+id/btn_iniciar"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
             android:layout_gravity="center"
-            android:layout_marginTop="70dp"
-            android:backgroundTint="@color/morado"
-            android:text="Iniciar Sesión"
-            android:textAllCaps="false" />
+            >
+
+            <Button
+                android:id="@+id/btn_iniciar"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/morado"
+                android:text="Iniciar Sesión"
+                android:textAllCaps="false" />
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/sign_in_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
 
         <Button
             android:id="@+id/btn_registrar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:backgroundTint="@color/rojo2"
             android:text="Registrame"
             android:textAllCaps="false" />
