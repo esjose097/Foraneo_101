@@ -36,8 +36,8 @@
 
     <Button android:id="@+id/btn_guardar"
         android:layout_width="match_parent"
-        android:background="@color/amarillo"
-        android:textColor="@color/primary_text"
+        android:background="@color/morado"
+        android:textColor="@color/morado"
         android:layout_height="wrap_content"
         android:text="Guardar"
         />

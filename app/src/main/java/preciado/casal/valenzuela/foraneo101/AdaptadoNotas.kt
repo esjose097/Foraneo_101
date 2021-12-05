@@ -1,5 +1,6 @@
 package preciado.casal.valenzuela.foraneo101
 
+import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.view.LayoutInflater
@@ -9,10 +10,11 @@ import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import kotlinx.android.synthetic.main.nota_layout.view.*
 import java.io.File
 
 class AdaptadoNotas: BaseAdapter {
-    var context:Context
+    var context: Context? = null
     var notas:ArrayList<Nota>
 
     constructor(context: Context, notas:ArrayList<Nota>){
@@ -33,28 +35,37 @@ class AdaptadoNotas: BaseAdapter {
         return p0.toLong()
     }
 
-    override fun getView(p0: Int, p1: View?, p2: ViewGroup?): View {
+    override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
         var inflador = LayoutInflater.from(context)
         var vista = inflador.inflate(R.layout.nota_layout, null)
-        var nota = notas[p0]
+        var nota = notas[position]
 
-        var titulo = vista.findViewById(R.id.tv_titulo_det) as TextView
+
+
+       /* var titulo = vista.findViewById(R.id.tv_titulo_det) as TextView
         var contenido = vista.findViewById(R.id.tv_contenido_det) as TextView
         val btnBorrar = vista.findViewById(R.id.btn_borrar) as ImageView
         val btnEditar = vista.findViewById(R.id.btn_editar) as ImageView
+*/
+        vista.tv_titulo_det.text = nota.titulo
+        vista.tv_contenido_det.text = nota.contenido
+        /*titulo.setText(nota.titulo)
+        contenido.setText(nota.contenido)*/
 
-        titulo.setText(nota.titulo)
-        contenido.setText(nota.contenido)
-
-        btnBorrar.setOnClickListener {
+        vista.btn_borrar.setOnClickListener {
             eliminar(nota.titulo.toString())
             notas.remove(nota)
             this.notifyDataSetChanged()
         }
 
-        btnEditar.setOnClickListener {
+        vista.btn_editar.setOnClickListener {
             /*Aquí editariamos la nota, SI SUPIERAMOS COMO!!!!*/
+            var intent = Intent(context, NotaActivity::class.java)
+            intent.putExtra("titulo", nota.titulo)
+            intent.putExtra("contenido", nota.contenido)
+            (context as Activity).startActivityForResult(intent,123)
         }
+
         return vista
     }
 

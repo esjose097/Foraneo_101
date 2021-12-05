@@ -17,6 +17,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import kotlinx.android.synthetic.main.activity_nota.*
 
 
 import java.io.File
@@ -30,6 +31,17 @@ class NotaActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_nota)
+
+        var extras = intent.extras
+
+        if(extras != null){
+            var titulo = extras.getString("titulo")
+            var contenido = extras.getString("contenido")
+
+            et_titutlo.setText(titulo)
+            et_contenido.setText(contenido)
+        }
+
         /*Prueba*/
         this.eTitulo = findViewById(R.id.et_titutlo) as EditText
         this.eContenido = findViewById(R.id.et_contenido) as EditText
@@ -44,7 +56,25 @@ class NotaActivity : AppCompatActivity() {
     }
 
     fun guardar_Nota(){
-        if(ContextCompat.checkSelfPermission(this,android.Manifest.permission.WRITE_EXTERNAL_STORAGE)
+        var titulo = et_titutlo.text.toString()
+        var cuerpo = et_contenido.text.toString()
+        if (titulo == "" || cuerpo ==  ""){
+            Toast.makeText(this, "Porfavor de llenar todos los campos", Toast.LENGTH_SHORT).show()
+        }else{
+            if (isExternalStorageWritable() && verificarPermiso()){
+                //val archivo = File(Environment.getExternalStorageDirectory(),titulo+".txt")
+                val archivo = File(ubicacion(),titulo+".txt")
+                val fos = FileOutputStream(archivo)
+                fos.write(cuerpo.toByteArray())
+                fos.close()
+                Toast.makeText(this,"Se guardó el archivo en la carpeta pública", Toast.LENGTH_SHORT).show()
+            }else{
+                Toast.makeText(this, "Ocurrió un error al guardar el archivo :c", Toast.LENGTH_SHORT).show()
+            }
+        }
+        finish()
+               
+        /*if(ContextCompat.checkSelfPermission(this,android.Manifest.permission.WRITE_EXTERNAL_STORAGE)
             != PackageManager.PERMISSION_DENIED)
         {
             ActivityCompat.requestPermissions(this, arrayOf(android.Manifest.permission.WRITE_EXTERNAL_STORAGE),
@@ -57,6 +87,15 @@ class NotaActivity : AppCompatActivity() {
             Toast.makeText(baseContext, "Necesita conceder los permisos necesarios, porfavor" +
                 "activelos y reinicie la aplicación",
             Toast.LENGTH_SHORT).show()
+        }*/
+    }
+
+    fun isExternalStorageWritable(): Boolean{
+        val state = Environment.getExternalStorageState()
+        if (Environment.MEDIA_MOUNTED.equals(state)){
+            return true
+        }else{
+            return false
         }
     }
 
@@ -77,6 +116,12 @@ class NotaActivity : AppCompatActivity() {
             }
         }
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+    }
+
+    private fun verificarPermiso(): Boolean{
+        var permiso = Manifest.permission.WRITE_EXTERNAL_STORAGE
+        var verificacion = ContextCompat.checkSelfPermission(this, permiso)
+        return (verificacion == PackageManager.PERMISSION_GRANTED)
     }
 
     fun guardar(){

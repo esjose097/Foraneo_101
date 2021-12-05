@@ -148,11 +148,11 @@
 
             <!--IN DRIVER-->
             <ImageView
-                android:layout_height="60dp"
-                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_width="50dp"
                 android:layout_row="3"
                 android:layout_column="0"
-                android:layout_marginLeft="30dp"
+                android:layout_marginLeft="36dp"
                 android:layout_marginTop="30dp"
                 android:clickable="true"
                 android:focusable="true"
