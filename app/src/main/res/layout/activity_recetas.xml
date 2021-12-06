@@ -24,6 +24,7 @@
                 android:layout_gravity="center"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
+                android:contentDescription="icono de back"
                 android:background="@drawable/ic_arrow_back"
                 android:clickable="true"
                 android:focusable="true"/>
@@ -35,6 +36,7 @@
                 android:layout_gravity="center|right"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="20dp"
+                android:contentDescription="Icono de perfil"
                 android:clickable="true"
                 android:focusable="true"
                 tools:srcCompat="@tools:sample/avatars"/> <!--Esta imagen es temporal-->

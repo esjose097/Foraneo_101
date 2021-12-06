@@ -20,6 +20,8 @@
     <!--Pantalla recetas-->
     <string name="subtituloRecetas">¿Tienes hambre?</string>
     <string name="textoRecetas">Aquí puedes ver varias de nuestras recetas</string>
+    <string name="ingredientes">Los ingredientes son: </string>
+    <string name="procedimiento">Procedimiento: </string>
 
     <!--Botones-->
     <string name="CerrarSesion">Cerrar sesión</string>
