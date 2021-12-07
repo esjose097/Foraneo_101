@@ -17,9 +17,12 @@
     <color name="naranja">#f8a44c</color>
     <color name="rojo">#b44c54</color>
     <color name="rojo2">#ff7474</color>ff7474
+    <color name="rojoBajo">#FF8787</color>ff7474
     <color name="azul">#448cfc</color>
+    <color name="azulBajo">#75A7F6</color>
+    <color name="azulMasBajo">#A3BCE3</color>
     <color name="grisClaro">#BDBDBD</color>
-
+    <color name="cafe">#EBB37F48</color>
 
     <!--Colores de la parte para las notas-->
     <color name="colorPrimary">#FFEB3B</color>

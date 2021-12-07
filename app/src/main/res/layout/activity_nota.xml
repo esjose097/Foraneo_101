@@ -12,34 +12,39 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/primary_text"
-        android:text="NOTA"
-        android:textSize="24dp"
-        android:textAlignment="center"/>
+        android:text="@string/nota"
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        />
 
     <EditText
         android:id="@+id/et_titutlo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Título"
+        android:hint="@string/titulo"
         android:minHeight="48dp"
-        android:textColor="@color/primary_text" />
+        android:textColor="@color/primary_text"
+        android:inputType="textShortMessage" />
 
     <EditText
         android:id="@+id/et_contenido"
-        android:hint="Escribir nota..."
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:hint="@string/escribirNota"
         android:textColor="@color/secondary_text"
         android:inputType="textMultiLine"
         android:layout_weight="1"
         android:gravity="top"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:scrollbars="vertical"
+        />
 
     <Button android:id="@+id/btn_guardar"
         android:layout_width="match_parent"
-        android:background="@color/morado"
-        android:textColor="@color/morado"
-        android:layout_height="wrap_content"
-        android:text="Guardar"
+        android:layout_height="65dp"
+        android:backgroundTint="@color/cafe"
+        android:textColor="@color/white"
+        android:text="@string/guardar"
         />
 
 </LinearLayout>

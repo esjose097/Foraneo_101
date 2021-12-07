@@ -5,13 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/rojoBajo"
     tools:context=".LoginActivity">
 
     <!--Linear con la foto de perfil-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="250dp"
-        android:background="@color/azul">
+        android:background="@color/azulBajo">
 
 
         <ImageView
@@ -31,7 +32,7 @@
         android:layout_height="550dp"
         android:layout_marginLeft="45dp"
         android:layout_marginTop="170dp"
-        android:background="@color/rojo2"
+        android:background="@drawable/background_rounded"
         android:orientation="vertical">
 
         <TextView
@@ -39,70 +40,79 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Inicia Sesión"
+            android:text="@string/iniciarSesion"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="32dp" />
+            android:textSize="32sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/emailEditText"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_marginLeft="45dp"
             android:layout_marginTop="50dp"
             android:layout_marginRight="45dp"
+            android:paddingStart="10sp"
             android:ems="10"
+            android:hint="@string/usuario"
             android:inputType="textPersonName"
-            android:hint="Usuario / Correo"
-            android:textSize="24dp" />
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:background="@drawable/background_rounded"
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/passordEditText"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_marginLeft="45dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="45dp"
+            android:paddingStart="10sp"
             android:ems="10"
+            android:hint="@string/contraseña"
             android:inputType="textPassword"
-            android:hint="Contraseña"
-            android:textSize="24dp" />
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:background="@drawable/background_rounded"
+            android:textSize="24sp" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="30dp"
             android:layout_gravity="center"
-            >
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/btn_iniciar"
-                android:padding="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:backgroundTint="@color/morado"
-                android:text="Iniciar Sesión"
+                android:padding="10dp"
+                android:text="@string/iniciarSesion"
                 android:textAllCaps="false" />
 
             <com.google.android.gms.common.SignInButton
                 android:id="@+id/sign_in_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/white"/>
+                android:backgroundTint="@color/white" />
         </LinearLayout>
 
 
         <Button
             android:id="@+id/btn_registrar"
-            android:layout_width="wrap_content"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:backgroundTint="@color/grisClaro"
-            android:text="Registrame"
-            android:textAllCaps="false"/>
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="@color/azul"
+            android:text="@string/registrame"
+            android:textAllCaps="false" />
     </LinearLayout>
 
 

@@ -3,6 +3,24 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudioProjects/102/Foraneo_101/app/src/main/res/drawable/background_rounded.xml" value="0.2703125" />
+        <entry key="..\:/AndroidStudioProjects/102/Foraneo_101/app/src/main/res/drawable/background_rounded_red.xml" value="0.2703125" />
+        <entry key="..\:/AndroidStudioProjects/102/Foraneo_101/app/src/main/res/drawable/rounded_button.xml" value="0.2703125" />
+        <entry key="..\:/AndroidStudioProjects/102/Foraneo_101/app/src/main/res/layout/activity_detalle_receta.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/102/Foraneo_101/app/src/main/res/layout/activity_lista_notas.xml" value="0.17255434782608695" />
+        <entry key="..\:/AndroidStudioProjects/102/Foraneo_101/app/src/main/res/layout/activity_login.xml" value="0.264" />
+        <entry key="..\:/AndroidStudioProjects/102/Foraneo_101/app/src/main/res/layout/activity_main.xml" value="0.17255434782608695" />
+        <entry key="..\:/AndroidStudioProjects/102/Foraneo_101/app/src/main/res/layout/activity_menu.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/102/Foraneo_101/app/src/main/res/layout/activity_nota.xml" value="0.264" />
+        <entry key="..\:/AndroidStudioProjects/102/Foraneo_101/app/src/main/res/layout/activity_perfil.xml" value="0.5332302936630603" />
+        <entry key="..\:/AndroidStudioProjects/102/Foraneo_101/app/src/main/res/layout/activity_recetas.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/102/Foraneo_101/app/src/main/res/layout/activity_registro.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/102/Foraneo_101/app/src/main/res/layout/activity_splash_screen.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/102/Foraneo_101/app/src/main/res/layout/activity_transportes.xml" value="0.264" />
+        <entry key="..\:/AndroidStudioProjects/102/Foraneo_101/app/src/main/res/layout/activity_ubicaciones.xml" value="0.17255434782608695" />
+        <entry key="..\:/AndroidStudioProjects/102/Foraneo_101/app/src/main/res/layout/content_nota.xml" value="0.17255434782608695" />
+        <entry key="..\:/AndroidStudioProjects/102/Foraneo_101/app/src/main/res/layout/nota_layout.xml" value="0.264" />
+        <entry key="..\:/AndroidStudioProjects/102/Foraneo_101/app/src/main/res/layout/receta.xml" value="0.2" />
         <entry key="..\:/Users/HP/Desktop/Foraneo_101/app/src/main/res/drawable/backrepeat.xml" value="0.18981481481481483" />
         <entry key="..\:/Users/HP/Desktop/Foraneo_101/app/src/main/res/layout/activity_detalle_receta.xml" value="0.5" />
         <entry key="..\:/Users/HP/Desktop/Foraneo_101/app/src/main/res/layout/activity_lista_notas.xml" value="0.10280797101449275" />

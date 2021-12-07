@@ -28,5 +28,23 @@
     <string name="title_activity_lugares">Lugares</string>
     <string name="title_activity_maps">MapsActivity</string>
 
+    <string name="contentDUbicaciones">Opción de ubicación</string>
+    <string name="contentDTransportes">Opción de medios de transporte</string>
+    <string name="contentDBitacora">Opción de notas</string>
+    <string name="contentDRecetas">Opción de recetas</string>
 
+
+    <string name="iniciarSesion">Iniciar Sesión</string>
+    <string name="usuario">Usuario / Correo</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="registrame">Registrame</string>
+    <string name="nota">Nota</string>
+    <string name="titulo">Título</string>
+    <string name="escribirNota">Escribir nota&#8230;</string>
+    <string name="guardar">Guardar</string>
+    <string name="eliminarCuenta">Eliminar cuenta</string>
+    <string name="icono">Icono de perfil</string>
+    <string name="contraseniaConfirmar">Confirma la contraseña</string>
+    <string name="crearCuenta">Crear una cuenta</string>
+    <string name="volver">Volver</string>
 </resources>
